@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Byte-Task</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #000000, #1e3a8a); /* Black to Blue */
+    }
+    .inverted {
+      filter: invert(1);
+    }
+    .icon {
+      width: 30px; /* Adjust size as needed */
+      height: 30px; /* Adjust size as needed */
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+  <h1 class="text-3xl font-bold mb-8 text-white">Byte-Task</h1>
+  <div class="space-y-4">
+    <a href="/auth/github" class="block mb-4">
+      <button class="flex items-center px-4 py-2 bg-white text-black rounded-lg shadow hover:bg-gray-100 hover:outline hover:outline-blue-600 hover:outline-2">
+        <img src="./git.jpeg" alt="git" class="icon inverted mr-2">
+        Login with GitHub
+      </button>
+    </a>
+    <a href="/auth/google" class="block mb-4">
+      <button class="flex items-center px-4 py-2 bg-white text-black rounded-lg shadow hover:bg-gray-100 hover:outline hover:outline-blue-600 hover:outline-2">
+        <img src="./google.png" alt="google" class="icon mr-2">
+        Login with Google
+      </button>
+    </a>
+  </div>
+</body>
+</html>
