@@ -200,6 +200,10 @@ app.get("/private", (req, res) => {
  res.render("private");
 });
 
+app.get("/privacy-policy", (req, res) => {
+  res.render("privacy");
+});
+
 // Listen on port 3000
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
