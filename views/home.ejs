@@ -8,6 +8,16 @@
   <style>
     body {
       background: linear-gradient(to right, #000000, #1e3a8a); /* Black to Blue */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Full height */
+    }
+    .footer {
+      margin-top: auto; /* Push footer to bottom */
+      border-top: 1px solid white; /* Thinner white top border */
+      text-align: center; /* Center footer text */
+      padding: 10px; /* Padding around footer */
+      color: white; /* White text color */
     }
     .inverted {
       filter: invert(1);
@@ -16,11 +26,23 @@
       width: 30px; /* Adjust size as needed */
       height: 30px; /* Adjust size as needed */
     }
+    .content {
+      flex-grow: 1; /* Take up remaining space */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+      text-align: center; /* Center text */
+    }
+    h1 {
+      margin-bottom: 16px; /* Increased margin for more gap */
+      font-size: 4rem; /* Larger heading size */
+    }
   </style>
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen">
-  <h1 class="text-3xl font-bold mb-8 text-white">Byte-Task</h1>
-  <div class="space-y-4">
+<body>
+  <div class="content">
+    <h1 class="text-3xl font-bold mb-8 text-white">BYTE TASK</h1> <!-- Updated for larger size -->
     <a href="/auth/github" class="block mb-4">
       <button class="flex items-center px-4 py-2 bg-white text-black rounded-lg shadow hover:bg-gray-100 hover:outline hover:outline-blue-600 hover:outline-2">
         <img src="./git.jpeg" alt="git" class="icon inverted mr-2">
@@ -34,10 +56,8 @@
       </button>
     </a>
   </div>
-  <footer class="mt-8">
-    <p class="text-white">
-      <a href="https://www.freeprivacypolicy.com/live/dfa238b3-284e-411e-8961-97e4a9c6955e" class="underline hover:text-gray-300">Privacy Policy</a>
-    </p>
+  <footer class="footer">
+    <p>&copy; 2024 Byte-Task. All rights reserved. <a href="/privacy-policy" class="text-blue-600">Privacy Policy</a></p>
   </footer>
 </body>
 </html>
